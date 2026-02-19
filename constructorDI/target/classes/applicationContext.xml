@@ -1,0 +1,27 @@
+<beans xmlns="http://www.springframework.org/schema/beans"                                                                                                
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"                                                                                              
+       xsi:schemaLocation="                                                                                                                               
+       http://www.springframework.org/schema/beans                                                                                                        
+       http://www.springframework.org/schema/beans/spring-beans.xsd">                                                                                     
+                                                                                                                                                          
+    <bean id="student" class="com.klu.constructorDI.Student">                                                                                            
+                                                                                                                                                          
+      <constructor-arg value="12"/>                                                                                                                       
+      <constructor-arg value="Prasad"/>                                                                                                                   
+      <constructor-arg value="75999"/>                                                                                                                    
+      <constructor-arg value="true"/>                                                                                                                     
+      <constructor-arg value="19"/>                                                                                                                       
+      <constructor-arg value="99.99"/>                                                                                                                    
+      <constructor-arg ref="course"/>                                                                                                                     
+                                                                                                                                                          
+    </bean>                                                                                                                                               
+      <bean id = "course" class="com.klu.constructorDI.Course">                                                                                          
+      <constructor-arg value="FUll STACK"/>                                                                                                               
+      <constructor-arg value="4"/>                                                                                                                        
+      </bean>                                                                                                                                             
+                                                                                                                                                          
+                                                                                                                                                          
+                                                                                                                                                          
+                                                                                                                                                          
+                                                                                                                                                          
+</beans>
